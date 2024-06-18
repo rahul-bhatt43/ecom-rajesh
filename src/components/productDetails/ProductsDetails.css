@@ -1,0 +1,62 @@
+.productdetail-container{
+    margin-top: 80px;
+    width: 1300px;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   /* column-gap: -100px; */
+}
+.productdetail-img{
+    width: 500px; 
+    height: 550px;
+   border-right: 3px double whitesmoke;
+   display: flex;
+   justify-content: end;
+}
+img{
+    width: 400px;
+    height: 500px;
+}
+.second-div{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-left: 2px double whitesmoke;
+}
+.product-description {
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    
+}
+.product-price{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.product-category{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.product-rating{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.productdetail-btn{
+    padding: 10px;
+    width: 150px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: large;
+    border-radius: 200px;
+}
+.productdetail-btn:hover{
+    background-color: red;
+    transition: 1s;
+  
+
+}
