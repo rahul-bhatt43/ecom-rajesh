@@ -1,0 +1,222 @@
+.cart-All-Parent{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.pro-container{
+    max-width: 1250px;
+    height: fit-content;
+    margin:0 auto;
+    display: flex;
+    /* column-gap: 20px; */
+    justify-content: space-between;
+    
+}
+.wrapper-container{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+   
+}
+
+
+.pro-children{
+    width: 800px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 25px;
+    border-bottom: 3px solid whitesmoke;
+    border-right: 1px solid  whitesmoke;
+}
+.img-cart-parent{
+    width: 400px;
+    height: 130px;
+    display:flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.img-cart-parent img{
+    width: 200px;
+    height: 130px;
+}
+.cart-title{
+    width: 200px;
+    text-wrap: wrap;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.676);
+}
+.cart-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.cart-btn button{
+    padding: 5px 5px;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+}
+.cart-btn p{
+    font-size: larger;
+    
+}
+
+.total-amount-parent {
+   
+}
+
+.total-img{
+    width: 70px;
+    height: 70%;
+}
+.total-amount-c-parent{
+    
+    
+    border-top: 2px double whitesmoke;
+}
+.total-amount-c{
+    /* border: 1px solid blue; */
+    /* border-bottom: 1px solid whitesmoke; */
+    width: 350px; 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-cart{
+   
+    padding:5px 15px ;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    padding: 2px 4px;
+    font-size: 20px;
+}
+.pading{
+    font-size: x-large;
+}
+.total-amount{
+    color: green;
+}
+
+.cart-total-item{
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+.cart-total-amount{
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.total-item{
+    color: rgba(0, 0, 0, 0.651);
+}
+.cart-totoal-item-parent{
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-totoal-item-parent-btn {
+    margin-left: 30%;
+    margin-top: 20px;
+    background-color:rgba(255, 0, 0, 0.806);
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    padding: 0.8rem 2rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 1s;
+    /* font-weight: 500; */
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    
+  }
+  .cart-totoal-item-parent-btn::before {
+
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+
+  }
+  .cart-totoal-item-parent-btn:hover::before {
+    transform: scaleX(1);
+  }
+  .cart-totoal-item-parent-btn:hover{
+    color: black;
+    border: 1px solid black;
+  }
+.cart-empty{
+    font-size:60px;
+    color:red;
+}
+/* responsive */
+@media (max-width:767px){
+    .pro-container{
+        width: 100vw;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .pro-children{
+        width: 95%;
+        height: 180px;
+    }
+    .img-cart-parent{
+        width:150px;
+        height: 170px;
+        flex-direction:column; 
+        /* row-gap: 2px; */
+    }
+    .img-cart-parent img{
+        width:100px;
+
+        height: 110px;
+        object-fit: contain;
+    }
+    .cart-title{
+        width: 100px;
+        font-size: 13px;
+        text-align: center;
+        color: black;
+        text-wrap: wrap;
+    }
+    .cart-btn{
+        column-gap:2px;
+    }
+    
+
+    .total-amount-c{
+     margin: auto;
+      width: 85%; 
+     height: 35px;  
+    align-items: center;
+    justify-content:space-between;
+    }
+    .cart-totoal-item-parent{
+        width: 85%;
+        margin: auto;
+}
+    .cart-empty{
+        font-size: 30px;
+
+    }
+    .cart-totoal-item-parent-btn{
+        z-index: -1;
+    }
+}

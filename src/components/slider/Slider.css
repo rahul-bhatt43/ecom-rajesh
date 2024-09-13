@@ -7,6 +7,7 @@
     height: 300px;
     margin: auto;
     overflow: hidden;
+    z-index: -1;
 }
 
 .slider-images {
@@ -14,7 +15,8 @@
     transition: transform 0.5s ease-in-out;
 }
 img{
-    height: 250px;
+    height: 500px;
+    /* object-fit: contain; */
 }
 
 .slider-images img {
@@ -46,3 +48,15 @@ img{
     right: 10px;
 }
 
+/* responsive */
+@media (max-width: 768px) {
+    .slider{
+        height: 150px;
+    }
+    .slider-images img{
+        object-fit: contain;
+        width: 100%;
+        height: fit-content;
+    }
+    
+}

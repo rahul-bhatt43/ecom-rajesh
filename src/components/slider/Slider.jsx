@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Slider.css';
 
 const sliderImg = [
@@ -10,6 +10,7 @@ const sliderImg = [
 
 const Slider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderImg.length);
@@ -19,8 +20,26 @@ const Slider = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + sliderImg.length) % sliderImg.length);
     };
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (isPlaying) {
+        nextSlide();
+      }
+    }, 3000); // Change the interval time as needed
+
+    return () => clearInterval(intervalId);
+  }, [isPlaying]);
+
+  const handleMouseEnter = () => {
+    setIsPlaying(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPlaying(true);
+  };
+
     return (
-        <div className="slider">
+    <div className="slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <button className="slider-button prev" onClick={prevSlide}>❮</button>
             <div className="slider-images">
                 {sliderImg.map((slide, index) => (
@@ -28,7 +47,7 @@ const Slider = () => {
                         key={slide.id}
                         src={slide.image}
                         alt={`Slide ${slide.id}`}
-                        className= {index === currentIndex ? 'active' : ''}
+            className={index === currentIndex ? 'active' : ''}
                     />
                 ))}
             </div>
