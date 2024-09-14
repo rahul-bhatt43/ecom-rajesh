@@ -4,26 +4,14 @@ import Footer from '../footer/Footer'
 import './Products.css'
 import { Link } from 'react-router-dom'
 import data from '../data/Data'
-import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import SecondNav from '../secondNav/SecondNav'
 function Products({addTocart,dataProduct,onClick}) {
    
     
   return (
-    <>
-      <ToastContainer
-  position="top-right"
-  autoClose={1500}
-  hideProgressBar={false}
-  newestOnTop={false}
-  closeOnClick
-  rtl={false}
-  pauseOnFocusLoss
-  draggable
-  pauseOnHover
-  theme="light" 
-/>
+   
+
    
    <div className='products-Wrapper'>
  
@@ -56,7 +44,6 @@ function Products({addTocart,dataProduct,onClick}) {
    
     </div>
 
-</>
    
 
   )
