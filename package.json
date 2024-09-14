@@ -3,16 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://rajesh0013.github.io/e-com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+    
   },
   "dependencies": {
     "@fontsource/outfit": "^5.0.12",
     "@fontsource/roboto": "^5.0.12",
     "framer-motion": "^11.2.10",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-rating-stars-component": "^2.2.0",
