@@ -59,7 +59,7 @@ function NavBar({ user, cart }) {
          {user?
         
           <form className='form-first' onSubmit={submitHandler}>
-            <input type="text" placeholder='Search your products here'
+            <input type="search" placeholder='Search your products here'
               value={searchInp}
               onChange={(e) => setSearchInp(e.target.value)} />
               
