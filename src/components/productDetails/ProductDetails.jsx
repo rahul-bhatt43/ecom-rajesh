@@ -23,6 +23,10 @@ function ProductDetail({ addTocart }) {
   const toggleDescription = () => {
     setShowFullDescription(!showFullDescription);
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

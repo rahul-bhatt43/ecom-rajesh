@@ -18,6 +18,7 @@
     list-style: none;
     color: rgba(0, 0, 0, 0.73);
     cursor: pointer;
+    
    }
   
    .cloth-Filter-Parent{
@@ -25,10 +26,12 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    font-size: large;
-    font-weight: 500;
     text-align: center;
-  
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 16px;  
+    
    }
    .filtersection-Li:hover{
     color: rgba(255, 0, 0, 0.765);
@@ -53,6 +56,10 @@
     }
     .filtersection-Li{
       text-wrap: wrap;
+    }
+    .filter-li{
+      text-wrap: wrap;
+      width: 35px;
     }
     .cloth-Filter-Parent{
     

@@ -2,10 +2,11 @@
     margin-top: 10px;
  }
  .top-Heading{
-     font-family:'Times New Roman', Times, serif;
      font-size: 24px;
      margin:0 0 50px 100px;
-     color: rgba(0, 0, 0, 0.79);
+     font-family: "Lato", sans-serif;
+     font-weight: 600;
+     font-style: normal;
  }
  .top-Container{
      width: 1250px;

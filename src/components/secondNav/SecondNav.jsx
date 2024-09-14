@@ -42,7 +42,7 @@ function SecondNav() {
           <Link to={'/miscell'} className="filtersection-Li">
            <img src="https://i.imgur.com/BG8J0Fj.jpg"/>
            </Link>
-          <Link to={'/miscell'} className="filtersection-Li">Miscellaneous</Link>
+          <Link to={'/miscell'} className="filtersection-Li filter-li">Miscellaneous</Link>
           </div>
         </ul>
     </div>

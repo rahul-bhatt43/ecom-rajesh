@@ -64,8 +64,8 @@
      font-weight: 600;
  }
  .top-Card-Rating-discount span{
-    color: rgba(0, 0, 0, 0.659);
-    font-size: 16px;
+    color: rgba(0, 0, 0, 0.805);
+    font-size: 19px;
  }
  .top-Card-Rating-Rate{
      font-size: 14px;
@@ -81,7 +81,7 @@
    
  }
  .top-Cart-Price-Product-discount{
-    color: rgba(0, 0, 0, 0.493);
+    color: rgba(0, 0, 0, 0.672);
     font-size: 20px;
     text-decoration: line-through;
  }
@@ -163,5 +163,13 @@
          font-weight: normal; 
               
      }
+     .top-Card-Rating-discount{
+        column-gap:10px;
+        font-size: 14px;
+    }
+    .top-Card-Rating-discount span{
+       font-size: 16px;
+       font-weight: 500;
+    }
  
  }

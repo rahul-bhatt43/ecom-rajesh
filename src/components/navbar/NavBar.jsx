@@ -54,7 +54,7 @@ function NavBar({ user, cart }) {
           {/* <div className='logo-parent'> */}
           <Link to={"/"}>
             <img className='logo-img' src="https://media2.giphy.com/media/kzqpRUnyH873DhjD7c/200_d.gif"
-              alt="logo" width={50} height={50} />
+              alt="website-Logo" width={50} height={50} />
           </Link>
          {user?
         

@@ -12,7 +12,7 @@ function DiscountProduct({addTocart}) {
 
     const discountedPrices = filterDiscountedProducts.map((item) => {
       const discountPercentage = parseFloat(item.discouted.replace("%", "")); 
-      const discountedPrice = item.realprice - (item.realprice * (discountPercentage / 100)); 
+      const discountedPrice =  Math.floor(item.realprice - (item.realprice * (discountPercentage / 100))); 
       return { ...item,price:discountedPrice}; 
     });
 
@@ -24,7 +24,7 @@ function DiscountProduct({addTocart}) {
     <h1 className='top-Heading'>Special Offers</h1>
    <div className='top-Container'>
 
-       {
+       { 
            discountedProducts.map((item,index)=>{
                return(
                    <div key={index} className='top-Card'>
