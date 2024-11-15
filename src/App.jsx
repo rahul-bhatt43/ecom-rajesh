@@ -93,7 +93,7 @@ function App() {
 
   return (
     <div>
-<Router basename='/e-com'>
+<Router>
 <NavBar user={user} cart={cart} />
 <Routes>
  <Route path="/" element={user ? <Home addTocart={addTocart} /> : <Navigate to="/signup" />} />
